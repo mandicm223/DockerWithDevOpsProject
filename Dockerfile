@@ -7,6 +7,6 @@ RUN if [ "${NODE_ENV}" = "development" ]; \
     else npm install --only=production; \
     fi
 COPY . /.
-ENV PORT=3000
+ENV PORT=80
 EXPOSE $PORT
 CMD ["node" , "index.js"]
