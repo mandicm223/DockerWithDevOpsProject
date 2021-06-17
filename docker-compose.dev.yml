@@ -17,8 +17,7 @@ services:
             - MONGO_PASSWORD=markan1312
             - SESSION_SECRET=secrettt
         command: npm run dev
-        depends_on: 
-            - mongo
+
     mongo:
         environment: 
             - MONGO_INITDB_ROOT_USERNAME=markan
