@@ -9,6 +9,7 @@ services:
       - ./nginx/default.conf:/etc/nginx/conf.d/default.conf:ro
   node-app:
     build: .
+    image : mandicm223/docker-with-dev-ops
     environment:
       - PORT=3000
     depends_on:
